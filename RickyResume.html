@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RickyResume</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link href="css/resume.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#page").fullpage({
+				'verticalCentered': false,
+				'css3': true,
+				'anchors': ['1', '2', '3', '4'],
+				'navigation': true,
+				'navigationPosition': 'right',
+				'navigationTooltips': ['首页', '关于我', '项目', '联系我'],
+				'menu':true
+			});
+			// $("#sideNav li").click(function(){
+			// 	var index=$(this).index();
+			// 	$(".main").eq(index).css("z-index",9).siblings().css("z-index",1);
+			// })
+		
+		})
+	</script>
+</head>
+<body>
+<div id="page" >
+	<div id="home" class="center main homebg section">
+		<div class="padding">
+			<div class="avatar">
+				<img src="images/avatar.jpg" id="img1"> 
+				<img src="images/guichu.jpg" id="img2"> 
+			</div>
+			<h1 class="textshadow">崔原广</h1>
+			<p class="introduce">前端工程师</p>
+			<p>邮箱:<a href="mailto:18629548769@163.com">18629548769@163.com</a></p>
+		</div>
+	</div>
+	<div id="aboutMe" class="main aboutbg section">
+		<div class="padding">
+			<h2 class="textshadow center">关于我</h2>
+			<div class="show"><h2>· About Me ·</h2></div>
+			<div class="aboutMeCont">
+				<ul class="fl">
+					<li><span>姓名</span> | 崔原广-Ricky</li>
+					<li><span>性别</span> | 男</li>
+					<li><span>手机</span> | 18629548769</li>
+					<li><span>毕业学校</span> | 西南大学</li>
+					<li><span>学历</span> | 本科</li>
+					<li><span>邮箱</span> | 18629548769@163.com</li>
+				</ul>
+			<div class="aboutMeBreif fr">
+				<p>我是一个性格幽默、做事认真的人。</p>
+				<p>我喜欢研究所碰到的各种技术，不给自己设边界，有 Geek 精神。</p>
+				<p>我有时间概念，能在约定时间内保证完成任务。</p>
+				<p>半年前端开发经验，熟悉 HTML、CSS、Javascript，能熟练开发符合 W3C 标准的页面，熟练使用 jQuery 框架,掌握AngularJS及ionic框架，有移动端开发经验。</p>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div id="project" class="main projectbg section">
+		<div class="padding">
+			<h2 class="textshadow center">项目经历</h2>
+			<div class="show center"><h2>· Experience ·</h2></div>
+			<div class="flexbox">
+				<div class="flexbox_in">
+					<h3>摩登天空网站模仿</h3>
+					<p>项目简介：痴迷音乐的我对摩登天空网站界面的导航主要部分进行了模仿还原，通过这个项目让我对css3新增属性及html5有了更新的认识，同时学习了javascript，jquery，页面上的交互效果基本都可以实现，在完成项目期间，尝试了多种编辑器如"DreamWeaver","sublime","webstorm"等。</p>
+					<span>小结：这个项目的完成历时一个月，可以说带我走进了前端的大门。</span>
+				</div>
+				<div class="flexbox_in">
+					<h3>人人投项目</h3>
+					<p>项目简介：团队开发的人人投项目，我负责个人信息页面及登录注册部分的制作，其中应用到大量前后端数据交互，这也让我对AJAX请求，Json文件格式，以及html5表单验证，正则表达式等技术，在团队协作中，应用到了SVN项目管理系统。</p>
+					<span>小结：通过这个项目，我理解了前后端工作配合上的分工，以及团队合作中的工作流程。</span>
+				</div>
+				<div class="flexbox_in">
+					<h3>虎扑移动端模仿</h3>
+					<p>项目简介：应用AngularJs和框架ionic对篮球门户网站虎扑体育移动端包括下属分支电商项目虎扑识货进行了模仿，里面含大量的数据交互，也让我对AngularJs有了基础的认识。</p>
+					<span>小结：这个项目让我对响应式以及项目对浏览器的兼容性有了一定的认识，同时在移动端开发的水平上也有了一定的提高。</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="last" class="main center homebg section">
+	<div style="position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);">
+			<h2 class="textshadow" style="margin-bottom: 10px;">求带走~
+			</h2>
+			<a href="mailto:18629548769@163.com" style="font-size: 2em;">18629548769@163.com</a>
+	</div>
+	</div>
+</div>
+	<!-- <div id="sideNav" class="left">
+		<ul>
+			<li><p>首页</p></li>
+			<li><p>关于我</p></li>
+			<li><p>项目</p></li>
+			<li><p>联系我</p></li>
+		</ul>
+	</div> -->
+</body>
+</html>
